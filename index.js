@@ -1,10 +1,7 @@
-function placepdf(el) {
-    const jornalinfo = el;
+function pdf() {
+    const pfdinfo; //add pdf 
     var pdfjsLib = window['pdfjs-dist/build/pdf'];
     pdfjsLib.GlobalWorkerOptions.workerSrc = ''; // upgrade for cMapUrl
-
-    // Show loader
-    document.getElementById('loader').style.display = 'block';
 
     const pdfContainer = document.getElementById('pdf-container'); // Container for all pages
     pdfContainer.innerHTML = ''; // Clear previous content
